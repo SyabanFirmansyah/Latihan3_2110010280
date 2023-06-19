@@ -5,19 +5,11 @@ public class Lingkaran {
     public Lingkaran(double radius) {
         this.radius = radius;
     }    
-    double luasLingkaran(){
-       return 3.14*radius*2;
-   }
-    
-    double kelilingLingkaran(){
-        return 2*3.14*radius;
+     public double luas() {
+        return Math.PI * Math.pow(radius, 2);
     }
 
-    String setluasLingkaran() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    String setkelilingLingkaran() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double keliling() {
+        return 2 * Math.PI * radius;
     }
 }

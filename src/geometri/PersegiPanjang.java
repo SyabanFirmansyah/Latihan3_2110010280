@@ -8,15 +8,11 @@ public class PersegiPanjang {
         this.lebar   = lebar;
     }
     
-    double luasPersegiPanjang(){
-       return panjang*lebar;
-   }
-    
-    double kelilingPersegiPanjang(){
-        return 2*(panjang+lebar);
+    public double luas() {
+        return panjang * lebar;
     }
 
-    String setluasPersegiPanjang() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double keliling() {
+        return 2 * (panjang + lebar);
     }
 }
